@@ -1,8 +1,10 @@
-# SgDeliverySlotChecker
+# Singapore Grocery Delivery Slot Checker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sg_delivery_slot_checker`. To experiment with that code, run `bin/console` for an interactive prompt.
+Tells you if there are any available delivery slots from supported grocery stores.
 
-TODO: Delete this and the text above, and describe your gem
+Supported Grocery Stores:
+- Fairprice
+- Giant
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`SgDeliverySlotChecker::Checker.new(postal_code: 149555).check_availability`
 
 ## Development
 
