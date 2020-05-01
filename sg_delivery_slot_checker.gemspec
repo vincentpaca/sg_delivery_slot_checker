@@ -32,5 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-remote', '~> 0.1.8'
   spec.add_development_dependency 'pry-nav', '~>  0.3.0'
 
-  spec.add_runtime_dependency 'http', '~> 4.0'
+  spec.add_runtime_dependency 'httparty', '~> 0.18'
+  spec.add_runtime_dependency 'hashie', '~> 4.1.0'
 end
