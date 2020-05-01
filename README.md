@@ -24,7 +24,13 @@ Or install it yourself as:
 
 ## Usage
 
-`SgDeliverySlotChecker::Checker.new(postal_code: 149555).check_availability`
+```ruby
+SgDeliverySlotChecker::Checker.new(postal_code: 149555).check_availability
+```
+Returns the following `Hash`
+```
+=> {:fairprice=>true, :giant=>false}
+```
 
 ## Development
 
