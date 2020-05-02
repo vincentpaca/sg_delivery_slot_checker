@@ -29,7 +29,7 @@ SgDeliverySlotChecker::Checker.new(postal_code: 149555).check_availability
 ```
 Returns the following `Hash`
 ```
-=> {:fairprice=>true, :giant=>false}
+{ fairprice: true, giant: false }
 ```
 
 ## Development
@@ -40,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sg_delivery_slot_checker.
+Bug reports and pull requests are welcome on GitHub at https://github.com/vincentpaca/sg_delivery_slot_checker.
 
 
 ## License
