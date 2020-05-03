@@ -1,5 +1,6 @@
 require "sg_delivery_slot_checker/stores/fairprice"
 require "sg_delivery_slot_checker/stores/giant"
+require "sg_delivery_slot_checker/stores/cold_storage"
 
 module SgDeliverySlotChecker
   class Checker
@@ -23,7 +24,8 @@ module SgDeliverySlotChecker
     def stores
       {
         fairprice: SgDeliverySlotChecker::Stores::Fairprice,
-        giant: SgDeliverySlotChecker::Stores::Giant
+        giant: SgDeliverySlotChecker::Stores::Giant,
+        cold_storage: SgDeliverySlotChecker::Stores::ColdStorage
       }
     end
 
