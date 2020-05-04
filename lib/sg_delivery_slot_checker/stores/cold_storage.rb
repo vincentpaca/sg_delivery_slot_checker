@@ -18,11 +18,8 @@ module SgDeliverySlotChecker
       attr_reader :postal_code
 
       def get_availability
-        response = HTTParty.post('https://coldstorage.com.sg/checkout/cart/checkdelivery',
-          body: {
-            'postal_code': postal_code
-          }
-        )
+        response = HTTParty.get("https://coldstorage.com.sg/checkout/cart/checkdelivery?postal_code=#{postal_code}")
+
         slots = response.parsed_response
         slots.extend Hashie::Extensions::DeepFind
         slots.deep_find_all("available").any?(true)

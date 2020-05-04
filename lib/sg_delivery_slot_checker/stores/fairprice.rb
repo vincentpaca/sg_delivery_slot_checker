@@ -21,12 +21,12 @@ module SgDeliverySlotChecker
       attr_reader :postal_code
 
       def store_id
-        response = HTTParty.get("https://website-api.omni.fairprice.com.sg/api/serviceable-area?city=Singapore&pincode=#{postal_code}")
+        response = HTTParty.get("https://website-api.omni.fairprice.com.sg/api/serviceable-area?city=Singapore&pincode=\"#{postal_code}\"")
         response.parsed_response&.dig("data", "store", "id")
       end
 
       def get_availability(store:)
-        response = HTTParty.get("https://website-api.omni.fairprice.com.sg/api/slot-availability?address[pincode]=#{postal_code}&storeId=#{store}")
+        response = HTTParty.get("https://website-api.omni.fairprice.com.sg/api/slot-availability?address[pincode]=\"#{postal_code}\"&storeId=#{store}")
         response.parsed_response&.dig("data", "available")
       end
 

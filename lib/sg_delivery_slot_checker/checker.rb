@@ -6,7 +6,7 @@ module SgDeliverySlotChecker
   class Checker
 
     def initialize(postal_code:)
-      @postal_code = postal_code.to_s
+      @postal_code = postal_code
     end
 
     def check_availability
