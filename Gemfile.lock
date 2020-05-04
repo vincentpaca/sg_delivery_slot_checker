@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sg_delivery_slot_checker (0.1.0)
+    sg_delivery_slot_checker (0.2.0)
       hashie (~> 4.1.0)
       httparty (~> 0.18)
 
